@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "tokenized-wallet": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["--import", "tsx", "--disable-warning=ExperimentalWarning", "src/mcp/server.ts"],
+      "cwd": "${workspaceFolder}",
+      "env": { "TPK_ALLOWED_ACCOUNTS": "fund-a,fund-b" }
+    }
+  }
+}
